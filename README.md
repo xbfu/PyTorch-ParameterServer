@@ -6,10 +6,24 @@ The figure below shows the PS-based architecture. The consists of two logical en
 <div align=center><img width="50%" src="./ps-algo.png"/></div>
 
 ***
-### Requirements
-torch==1.9.0  
-torchvision==0.10.0
+### Environments
+The code is developed under the following configurations.  
+Server: a g3.16xlarge instance with 4 NVIDIA Tesla M60 GPUs on AWS EC2  
+System: Ubuntu 18.04  
+Software: python==3.6.9, torch==1.9.0, torchvision==0.10.0  
+***
+### Quick Start
+Download the code
+```bash
+git clone https://github.com/xbfu/PyTorch-ParameterServer.git
+```
+Install requirements
 ```bash
 pip install -r requirements.txt
 ```
-
+Prepare datasets
+```bash
+cd PyTorch-ParameterServer/data
+wget https://s3.amazonaws.com/fast-ai-imageclas/imagenette2.tgz
+tar -zxf imagenette2.tgz
+```
