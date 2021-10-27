@@ -9,4 +9,7 @@ The figure below shows the PS-based architecture. The consists of two logical en
 ### Requirements
 torch==1.9.0
 torchvision==0.10.0
-'pip install -r requirements.txt'
+```bash
+pip install -r requirements.txt
+```
+
