@@ -3,11 +3,11 @@ An implementation of [parameter server](https://www.usenix.org/system/files/conf
 ### PS-based Architecture
 <div align=center><img width="80%" src="./architecture.jpg"/></div>
 The figure below shows the PS-based architecture. The consists of two logical entities: one (or multiple) PS(s) and multiple workers. The whole dataset is partitioned among workers and the PS maintains model parameters. During training, each worker pulls model parameters from the PS, computes gradients on a mini-batch from its data partition, and pushes the gradients to the PS. The PS updates model parameters with gradients from the workers according to a synchronization strategy and sends the updated parameters back to the workers. The pseudocode of this architecture is shown as follows.
-<div align=center><img width="80%" src="./ps-algo.png"/></div>
+<div align=center><img width="50%" src="./ps-algo.png"/></div>
 
 ***
 ### Requirements
-torch==1.9.0
+torch==1.9.0\b
 torchvision==0.10.0
 ```bash
 pip install -r requirements.txt
