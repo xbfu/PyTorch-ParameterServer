@@ -18,7 +18,7 @@ git clone https://github.com/xbfu/PyTorch-ParameterServer.git
 ```
 #### 2. Install requirements
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 #### 3. Prepare datasets
 ```bash
