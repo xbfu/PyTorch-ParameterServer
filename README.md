@@ -5,7 +5,7 @@ The figure \[3\] below shows the PS-based architecture. The architecture consist
 <div align=center><img width="50%" src="./ps-algo.png"/></div>
 
 ## Implementation
-This code is based on torch.distributed.rpc \[4\]. It includes one PS (rank=0) and 4 workers (rank=1,2,3,4). 
+This code is based on [torch.distributed.rpc](https://pytorch.org/docs/1.9.0/rpc.html) \[4\]. It includes one PS (rank=0) and 4 workers (rank=1,2,3,4). 
 ## Environments
 The code is developed under the following configurations.  
 Server: a g3.16xlarge instance with 4 NVIDIA Tesla M60 GPUs on AWS EC2  
