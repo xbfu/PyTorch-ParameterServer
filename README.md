@@ -48,7 +48,7 @@ tar -zxf imagenette2.tgz
 
 ## Usage
 
-'''python
+```python
 import torch
 from torch import optim
 import torch.nn as nn
@@ -60,8 +60,7 @@ model_dict = {'resnet18': models.resnet18, 'resnet50': models.resnet50, 'vgg16':
               'googlenet': models.googlenet, 'inception': models.inception_v3,
               'densenet121': models.densenet121, 'mobilenet': models.mobilenet_v2}
 
-
-'''
+```
 
 
 ## References
