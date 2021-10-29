@@ -1,5 +1,18 @@
 # PyTorch-ParameterServer
 An implementation of parameter server (PS) framework [1] based on Remote Procedure Call (RPC) in PyTorch [2].
+
+## Table of Contents
+
+- [PS-based Architecture](#PS-based Architecture)
+- [Implementation](#Implementation)
+- [Environments](#Environments)
+- [Quick Start](#Quick Start)
+	- [Download the code](#Download the code)
+	- [Install requirements](#Install requirements)
+	- [Prepare datasets](#Prepare datasets)
+- [Usage](#Usage)
+- [References](#References)
+
 ## PS-based Architecture
 <div align=center><img width="80%" src="./architecture.jpg"/></div>
 The figure [3] below shows the PS-based architecture. The architecture consists of two logical entities: one (or multiple) PS(s) and multiple workers. The whole dataset is partitioned among workers and the PS maintains model parameters. During training, each worker pulls model parameters from the PS, computes gradients on a mini-batch from its data partition, and pushes the gradients to the PS. The PS updates model parameters with gradients from the workers according to a synchronization strategy and sends the updated parameters back to the workers. The pseudocode [1] of this architecture is shown as follows.
