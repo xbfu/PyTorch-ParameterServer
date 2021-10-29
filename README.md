@@ -7,11 +7,11 @@ An implementation of parameter server (PS) framework [1] based on Remote Procedu
 - [Implementation](#implementation)
 - [Environments](#environments)
 - [Quick Start](#quick-start)
-	- [1. Download the code](#download-the-code)
-	- [2. Install dependencies](#install-dependencies)
-	- [3. Prepare datasets](#prepare-datasets)
-	- [4. Train](#train)
-	- [5. Performance](#performance)
+	- [Download the code](#download-the-code)
+	- [Install dependencies](#install-dependencies)
+	- [Prepare datasets](#prepare-datasets)
+	- [Train](#train)
+	- [Performance](#performance)
 - [Usage](#Usage)
 - [References](#References)
 
@@ -28,23 +28,23 @@ Server: a g3.16xlarge instance with 4 NVIDIA Tesla M60 GPUs on AWS EC2
 System: Ubuntu 18.04  
 Software: python==3.6.9, torch==1.9.0, torchvision==0.10.0  
 ## Quick Start
-### 1. Download the code
+### Download the code
 ```bash
 git clone https://github.com/xbfu/PyTorch-ParameterServer.git
 ```
-### 2. Install dependencies
+### Install dependencies
 ```bash
 pip3 install -r requirements.txt
 ```
-### 3. Prepare datasets
+### Prepare datasets
 ```bash
 cd PyTorch-ParameterServer/data
 wget https://s3.amazonaws.com/fast-ai-imageclas/imagenette2.tgz
 tar -zxf imagenette2.tgz
 ```
-### 4. Train
+### Train
 
-### 5. Performance
+### Performance
 
 ## Usage
 
