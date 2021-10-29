@@ -48,6 +48,21 @@ tar -zxf imagenette2.tgz
 
 ## Usage
 
+'''python
+import torch
+from torch import optim
+import torch.nn as nn
+from torch.utils.data import DataLoader
+import torch.distributed.rpc as rpc
+from torchvision import transforms, datasets, models
+
+model_dict = {'resnet18': models.resnet18, 'resnet50': models.resnet50, 'vgg16': models.vgg16, 'alexnet': models.alexnet,
+              'googlenet': models.googlenet, 'inception': models.inception_v3,
+              'densenet121': models.densenet121, 'mobilenet': models.mobilenet_v2}
+
+
+'''
+
 
 ## References
 [1]. Li M, Andersen D G, Park J W, et al. [Scaling distributed machine learning with the parameter server](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-li_mu.pdf  )//11th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 14). 2014: 583-598.  
