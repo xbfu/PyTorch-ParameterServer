@@ -33,7 +33,7 @@ tar -zxf imagenette2.tgz
 
 
 ## References
-\[1\]. Li M, Andersen D G, Park J W, et al. [Scaling distributed machine learning with the parameter server](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-li_mu.pdf  )//11th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 14). 2014: 583-598.
-\[2\]. Pytorch. https://pytorch.org/
-\[3\]. Sergeev A, Del Balso M. [Horovod: fast and easy distributed deep learning in TensorFlow](https://arxiv.org/abs/1802.05799). arXiv preprint arXiv:1802.05799, 2018.
-\[4\]. Distributed RPC Framework. https://pytorch.org/docs/1.9.0/rpc.html
+\[1\]. Li M, Andersen D G, Park J W, et al. [Scaling distributed machine learning with the parameter server](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-li_mu.pdf  )//11th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 14). 2014: 583-598.  
+\[2\]. Pytorch. https://pytorch.org/  
+\[3\]. Sergeev A, Del Balso M. [Horovod: fast and easy distributed deep learning in TensorFlow](https://arxiv.org/abs/1802.05799). arXiv preprint arXiv:1802.05799, 2018.  
+\[4\]. Distributed RPC Framework. https://pytorch.org/docs/1.9.0/rpc.html  
