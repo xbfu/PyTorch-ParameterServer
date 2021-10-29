@@ -1,7 +1,7 @@
 An implementation of [parameter server](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-li_mu.pdf) (PS) framework \[1\] based on Remote Procedure Call (RPC) in [PyTorch](https://pytorch.org/) \[2\].
 ## PS-based Architecture
 <div align=center><img width="80%" src="./architecture.jpg"/></div>
-The figure \[3\] below shows the PS-based architecture. The architecture consists of two logical entities: one (or multiple) PS(s) and multiple workers. The whole dataset is partitioned among workers and the PS maintains model parameters. During training, each worker pulls model parameters from the PS, computes gradients on a mini-batch from its data partition, and pushes the gradients to the PS. The PS updates model parameters with gradients from the workers according to a synchronization strategy and sends the updated parameters back to the workers. The pseudocode \[1\] of this architecture is shown as follows.
+The figure [3] below shows the PS-based architecture. The architecture consists of two logical entities: one (or multiple) PS(s) and multiple workers. The whole dataset is partitioned among workers and the PS maintains model parameters. During training, each worker pulls model parameters from the PS, computes gradients on a mini-batch from its data partition, and pushes the gradients to the PS. The PS updates model parameters with gradients from the workers according to a synchronization strategy and sends the updated parameters back to the workers. The pseudocode \[1\] of this architecture is shown as follows.
 <div align=center><img width="50%" src="./ps-algo.png"/></div>
 
 ## Implementation
