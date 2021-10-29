@@ -6,10 +6,10 @@ An implementation of parameter server (PS) framework [1] based on Remote Procedu
 - [PS-based Architecture](#PS-based Architecture)
 - [Implementation](#Implementation)
 - [Environments](#Environments)
-- [Quick Start](#Quick Start)
-	- [Download the code](#Download the code)
-	- [Install requirements](#Install requirements)
-	- [Prepare datasets](#Prepare datasets)
+- [Quick Start](#quick-start)
+	- [Download the code](#download-the-code)
+	- [Install dependencies](#install-dependencies)
+	- [Prepare datasets](#prepare-datasets)
 - [Usage](#Usage)
 - [References](#References)
 
@@ -30,7 +30,7 @@ Software: python==3.6.9, torch==1.9.0, torchvision==0.10.0
 ```bash
 git clone https://github.com/xbfu/PyTorch-ParameterServer.git
 ```
-#### 2. Install requirements
+#### 2. Install dependencies
 ```bash
 pip3 install -r requirements.txt
 ```
