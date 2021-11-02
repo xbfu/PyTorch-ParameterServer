@@ -48,7 +48,11 @@ tar -zxf imagenette2.tgz
 python public-asgd.py --rank=0 --world_size=5
 ```
 ### Performance
-
+Sync Mode | Training Time (seconds)
+:-: | :-:
+Single | 354
+Syn | 288
+Asyn | 127
 ## Usage
 
 
