@@ -44,18 +44,45 @@ wget https://s3.amazonaws.com/fast-ai-imageclas/imagenette2.tgz
 tar -zxf imagenette2.tgz
 ```
 ### Train
+For PS
 ```python
-python public-asgd.py --rank=0 --world_size=5
+python public-asgd.py --rank=0
 ```
+For workers
+```python
+python public-asgd.py --rank=r
+```
+$r=1,2,3,4$ is the rank of each worker.
+
 ### Performance
 Sync Mode | Training Time (seconds)
 :-: | :-:
-Single | 354
-Syn | 288
-Asyn | 127
+Single | 858
+Syn | 533
+Asyn | 268
 ## Usage
+On one machine with multiple GPUs
+For PS
+```python
+python public-asgd.py --rank=0
+```
+For workers
+```python
+python public-asgd.py --rank=r
+```
+$r=1,2,3,4$ is the rank of each worker.
 
-
+On multiple machines
+For PS
+```python
+python public-asgd.py --rank=0 --master_addr=12.34.56.78
+```
+For workers
+```python
+python public-asgd.py --rank=r --master_addr=12.34.56.78
+```
+$r=1,2,3,4$ is the rank of each worker.
+$12.34.56.78$ is the IP address of the PS
 
 ## References
 [1]. Li M, Andersen D G, Park J W, et al. [Scaling distributed machine learning with the parameter server](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-li_mu.pdf  )//11th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 14). 2014: 583-598.  
