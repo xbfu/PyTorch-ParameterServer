@@ -52,7 +52,7 @@ For workers
 ```python
 python public-asgd.py --rank=r
 ```
-$r=1,2,3,4$ is the rank of each worker.
+`r=1,2,3,4` is the rank of each worker.
 
 ### Performance
 Sync Mode | Training Time (seconds)
@@ -70,7 +70,7 @@ For workers
 ```python
 python public-asgd.py --rank=r
 ```
-$r=1,2,3,4$ is the rank of each worker.
+`r=1,2,3,4` is the rank of each worker.
 
 On multiple machines
 For PS
@@ -81,8 +81,8 @@ For workers
 ```python
 python public-asgd.py --rank=r --master_addr=12.34.56.78
 ```
-$r=1,2,3,4$ is the rank of each worker.
-$12.34.56.78$ is the IP address of the PS
+`r=1,2,3,4` is the rank of each worker.
+`12.34.56.78` is the IP address of the PS
 
 ## References
 [1]. Li M, Andersen D G, Park J W, et al. [Scaling distributed machine learning with the parameter server](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-li_mu.pdf  )//11th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 14). 2014: 583-598.  
