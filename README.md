@@ -39,7 +39,7 @@ sudo sh install-dependencies.sh
 ```
 ### Prepare datasets
 ```bash
-cd PyTorch-ParameterServer/data
+cd PyTorch-ParameterServer
 wget https://s3.amazonaws.com/fast-ai-imageclas/imagenette2.tgz
 tar -zxf imagenette2.tgz
 ```
