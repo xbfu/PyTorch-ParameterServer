@@ -107,7 +107,7 @@ def main():
     parser.add_argument("--model", type=str, default="resnet18", help="The job's name.")
     parser.add_argument("--rank", type=int, default=1, help="Global rank of this process.")
     parser.add_argument("--world_size", type=int, default=3, help="Total number of workers.")
-    parser.add_argument("--data_dir", type=str, default="./data/imagenette2/val", help="The location of dataset.")
+    parser.add_argument("--data_dir", type=str, default="./imagenette2/val", help="The location of dataset.")
     parser.add_argument("--master_addr", type=str, default="localhost", help="Address of master.")
     parser.add_argument("--master_port", type=str, default="29600", help="Port that master is listening on.")
     parser.add_argument("--batch_size", type=int, default=64, help="Batch size of each worker during training.")
